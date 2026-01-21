@@ -4,7 +4,7 @@
 
 ## General Points
 * The application is pointing to the local host created using simple node backend linked
-* Refer the link for mock node server :: 
+* Refer the link for mock node server :: https://github.com/itsfaraz/Where-Is-My-Location-Mock-Server
 * An attached debug build application for testing
 
 #### Android Related
@@ -34,9 +34,9 @@
 
 ## Node Guide
 
-* Clone the mock server
-* Install node modules with npm install
-* In terminal command :: node index.js to start the server
+* Clone the mock server from https://github.com/itsfaraz/Where-Is-My-Location-Mock-Server
+* Install node modules with ``` npm install ```
+* In terminal command :: ``` node index.js ``` to start the server
 * Each location post from android can be shown in logs
 * Ensure to start server on port 3000
 * Once server started ensure ip address is same in mobile
