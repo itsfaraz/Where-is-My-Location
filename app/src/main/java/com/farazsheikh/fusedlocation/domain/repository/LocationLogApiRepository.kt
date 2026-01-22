@@ -59,4 +59,20 @@ class LocationLogApiRepository(
 
         return false
     }
+
+    suspend fun deleteAllLocationLog() : Boolean{
+        try{
+            val result = locationLogService.deleteAllLocationLog()
+            if (result.isSuccessful){
+                result.body()?.let {
+                    if (it.status.equals("200") && it.message.equals("completed")){
+                        return true
+                    }
+                }
+            }
+        }catch (e : Exception){
+            Log.i(TAG, "uploadLocationLog: Network Error")
+        }
+        return false
+    }
 }

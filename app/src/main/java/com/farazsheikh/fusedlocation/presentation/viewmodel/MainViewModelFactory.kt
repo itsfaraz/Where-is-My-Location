@@ -6,9 +6,9 @@ import com.farazsheikh.fusedlocation.domain.repository.LocationLogApiRepository
 import com.farazsheikh.fusedlocation.domain.repository.LogLocationStoreRepository
 
 class MainViewModelFactory(
-
+    private val locationLogApiRepository: LocationLogApiRepository
 ) : ViewModelProvider.Factory{
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return MainViewModel() as T
+        return MainViewModel(locationLogApiRepository) as T
     }
 }

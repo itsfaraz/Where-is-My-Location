@@ -17,4 +17,7 @@ interface LocationLogService {
 
     @DELETE("/mock/fused")
     suspend fun deleteLocationLog(locationLogRequest: LocationLogRequest) : Response<LocationLogResponse>
+
+    @DELETE("/mock/fused")
+    suspend fun deleteAllLocationLog() : Response<LocationLogResponse>
 }

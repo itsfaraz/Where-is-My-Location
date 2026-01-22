@@ -103,6 +103,6 @@ class LocationBeatService : Service() {
     companion object{
         var timeConfig : Long = 3000L
         var employeeId : String = "MP3001"
-        var ipAddress : String = "192.168.123.123"
+        var ipAddress : String = "192.168.1.5"
     }
 }
